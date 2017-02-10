@@ -25,6 +25,7 @@ import java.util.List;
  * @since 4.0
  * @version $Id$
  */
+@FunctionalInterface
 public interface ReplacementsHandler<T> {
 
     /**

@@ -33,6 +33,7 @@ package org.apache.commons.collections4;
  * @since 1.0
  * @version $Id$
  */
+@FunctionalInterface
 public interface Predicate<T> {
 
     /**

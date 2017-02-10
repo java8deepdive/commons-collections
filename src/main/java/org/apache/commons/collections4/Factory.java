@@ -31,6 +31,7 @@ package org.apache.commons.collections4;
  * @since 2.1
  * @version $Id$
  */
+@FunctionalInterface
 public interface Factory<T> {
 
     /**

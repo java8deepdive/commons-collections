@@ -169,6 +169,7 @@ public class ComparatorUtils {
         if (comparator == null) {
             comparator = NATURAL_COMPARATOR;
         }
+//        return Comparator.nullsFirst(comparator);
         return new NullComparator<E>(comparator, true);
     }
 

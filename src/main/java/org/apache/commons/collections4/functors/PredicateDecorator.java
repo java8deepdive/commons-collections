@@ -16,6 +16,9 @@
  */
 package org.apache.commons.collections4.functors;
 
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 import org.apache.commons.collections4.Predicate;
 
 /**
@@ -38,4 +41,8 @@ public interface PredicateDecorator<T> extends Predicate<T> {
      */
     Predicate<? super T>[] getPredicates();
 
+    default Stream<Predicate<? super T>> stream() {
+        return Arrays.stream(getPredicates());
+    }
+    
 }
